@@ -15,10 +15,7 @@
 }
 
 ul{
-    display: flex;
-    justify-content: center;
     background-color: #F6EFE7;
-    padding: 39px;
     font-size: 1.3rem;
     font-family: 'Bebas Neue', cursive;
     text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
@@ -32,10 +29,7 @@ li{
 }
 
 .logo{
-    height: 100px;
-    display: flex;
-    position: absolute;
-    left: 150px;
+    height: 70px;
 }
 
 a{
