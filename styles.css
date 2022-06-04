@@ -14,11 +14,12 @@
     font-family: 'Bebas Neue', cursive;
 }
 
-ul{
+.nav{
     background-color: #F6EFE7;
     font-size: 1.3rem;
     font-family: 'Bebas Neue', cursive;
     text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
+
 }
 
 li{
@@ -29,12 +30,8 @@ li{
 }
 
 .logo{
-    height: 70px;
-}
-
-a{
-    text-decoration: none;
-    color: #242323;
+    height: 60px;
+    margin-left: 2.5rem;
 }
 
 .comedor{
@@ -61,138 +58,72 @@ a{
     
 }
 
-.navfoot{
-    display: flex;
-    justify-content: column;
-}
-
-.topnav a:hover {
-	background-color: #ddd;
-	color: black;
-}
     
 @media screen and (max-width: 770px) {
-	.logo{
-        position: relative;
-        left: 37%;
-    }
-    .topnav{
-        padding: 5px;
-        font-size: 1rem;
-        padding: 0;
-    }
-    li{
-        font-size: 0.8rem;
-        margin: 20px;    
-    }
-    ul{
-        padding: 0;
-        }   
-    
-    .textoimg{
-        font-size: 0.8rem;
-    }
-    .footer{
-        font-size: 0.5rem;
-    }
-    .header{
-        background-color: #F6EFE7;
-            }
+	
 }
 
 
 
 @media screen and (max-width: 430px) {
-	.logo{
-        position: relative;
-        left: 29%;
-    }
-
-    .topnav{
-        padding: 5px;
-        font-size: 1rem;
-        padding: 0;
-    }
-
-    li{
-        font-size: 0.7rem; 
-        margin: 12px;       
-    }
-
-    ul{
-        padding: 0;
-    }
-
-    .comedor{
-        display: none;
-    }
-    .textoimg{
-        font-size: 0.7rem;
-        
-    }
-    .footer{
-        font-size: 0.5rem;
-    }
-    
-    .header{
-        background-color: #F6EFE7;
-        }
+	
     .section{
         background-image: url(./Assets/movile.jpg);
     }
 
-  
 }
 
 /*PRODUCTOS*/
 
-.titulo__puerta{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.7rem;
-    text-align: center;
-    padding: 4px;
-}
-
-.puertas__section{
-    padding: 2rem;
-}
-
-.productos__section{
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    padding: 2rem, 1.4rem;
-    
-}
-.precio{ 
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.6rem;
-text-align: center;
-padding: 2rem;
-}
-
-.productos__puertas{    
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.imagenpuertas{
-    width: 100%;
-}
-
-.titulo__puerta{
-    text-align: center;
-}
-
-.titulo__productos{
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 3rem;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    padding: 3rem;
-}
 
 
 
 /*CONTACTOS*/
+
+/*FOOTER*/
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+body {
+    background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+    font-family: 'Rubik', sans-serif;
+    background: #455A64;
+    height: 100 !important;
+}
+
+a{
+    text-decoration: none;
+    color: #242323;
+}
+.container-fluids{
+    overflow:hidden; 
+    background:#262626 ;
+    color: #627482  !important;
+    margin-bottom: 0 ;
+    padding-bottom:0  ;
+}
+
+small{
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+.bold-text{
+    color: #989c9e !important;
+}
+
+
+.mt-55{
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+
+h3{
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+.social{
+    font-size: 21px !important; 
+}
+
+.rights{
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
