@@ -5,26 +5,14 @@
 
 /*INDEX*/
 
-.index {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 4fr auto;
-    gap: 0px 0px;
-    grid-template-areas:
-        "header header header"
-        "section section section"
-        "footer footer footer";
-}
 
-.footer { grid-area: footer;
+.footer{
     background-color: #F6EFE7;
     grid-area: footer;
     padding-top: 20px;
     text-align: center;
     font-family: 'Bebas Neue', cursive;
 }
-.section { grid-area: section; }
-.header { grid-area: header; }
 
 ul{
     display: flex;
@@ -113,16 +101,6 @@ a{
     .footer{
         font-size: 0.5rem;
     }
-    .index {
-        display: grid; 
-        grid-template-columns: 1.3fr; 
-        grid-template-rows: 0.1fr 1.5fr 0.1fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-            "header"
-            "section"
-            "footer"; }
-    
     .header{
         background-color: #F6EFE7;
             }
@@ -162,16 +140,6 @@ a{
         font-size: 0.5rem;
     }
     
-    .index {
-            display: grid; 
-            grid-template-columns: 1.3fr; 
-            grid-template-rows: 0.1fr 4fr 0.1fr; 
-            gap: 0px 0px; 
-            grid-template-areas: 
-                "header"
-                "section"
-                "footer";}
-    
     .header{
         background-color: #F6EFE7;
         }
@@ -179,15 +147,7 @@ a{
         background-image: url(./Assets/movile.jpg);
     }
 
-    .productos{
-        display: grid; 
-        grid-template-columns: 1.3fr; 
-        grid-template-rows: 0.1fr 4fr 0.1fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-            "header"
-            "section"
-            "footer";}
+  
 }
 
 /*PRODUCTOS*/
@@ -242,71 +202,3 @@ padding: 2rem;
 
 
 /*CONTACTOS*/
-
-form{
-	width:465px;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
-	background-color:rgb(184, 180, 180);
-}
-form input[type="text"],
-form input[type="email"]
-{
-	width:180px;
-	padding:3px 10px;
-	border:1px solid #f6f6f6;
-	border-radius:3px;
-	background-color:#f6f6f6;
-	margin:8px 0;
-	display:inline-block;
-}
-form input[type="submit"]{
-	width:100%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-	background-color:#000;
-} 
-form input[type="reset"]{
-	width:100%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-	background-color:#000;
-} 
-textarea{
-	width:100%;
-	height:100px;
-	border:1px solid #f6f6f6;
-	border-radius:3px;
-	background-color:#f6f6f6;			
-	margin:8px 0;
-	resize:none;
-	display:block;
-}
-
-table {
-    width: 50%;
-    border: 2px solid #000;
-    border-radius: 5px;
- }
- th, td {
-    width: 20%;
-    text-align: center;
-    vertical-align: center;
-    border: 2px solid #000;
-    border-collapse: collapse;
-    padding: 0.3em;
-    caption-side: bottom;
- }
- 
- th {
-    background: #f6efe7;
- }
