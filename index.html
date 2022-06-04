@@ -10,38 +10,44 @@
     <link rel="icon" type="image/png" href="./Assets/favicon.png">
 </head>
 <body>
-    <div class="index">
-            <header class="header">
-                <nav>
-                    <!--Fondo-->
-                    <img class="logo" src="./Assets/carpinteria.png" alt="">	
-                    <!--Navegacion--> 
-                    <div class="topnav">
-                        <ul>
-                            <li><a href="./index.html">Inicio</a></li>
-                            <li><a href="./vistas/Productos.html">Productos</a></li>
-                            <li><a href="./vistas/Tiempo_de_Entrega.html">Tiempo de Entrega</a></li>
-                            <li><a href="./vistas/Quienes_somos.html">¿Quienes somos?</a></li>
-                            <li><a href="./vistas/Contacto.html">Contacto</a></li>
-                        </ul>
+    <header>
+            <nav class="navbar nav navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a href="/index.html"><img class="logo" src="./Assets/carpinteria.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link active expand" aria-current="page" href="./Vistas/Productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Vistas/Nuestras_Tiendas.html">Nuestras tiendas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Vistas/Quienes_somos.html">¿Quienes somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Vistas/Contacto.html">Contacto</a>
+                            </li>
+                            </ul>
+                        </div>
                     </div>
-                </nav>  
-            </header>        
-                <!-- Texto -->
-        <div class="section">        
-            <div class="comedorimg">
-                <img class="comedor" src="./Assets/comedor2.jpg" alt="">
-                <div class="textoimg">
-                    <section>
-                        <h2>¡Muebles a Medida para tus proyectos personales!</h2>   
-                        <h3>¡Hacemos Aberturas, Vestidores, Amoblamientos de Cocina, Sillas , Mesas, de todo para tu Hogar!</h3>
-                        <h4>¡Trabajamos con todos los medios de pago!</h4>
-                        <h4>¡Presupuestos online en menos de 24hs!</h4>
-                        <h4>¡Tambien hacemos envios via cargo a todo el pais!</h4>
-                    </section>
+            </nav> 
+    </header>
+    <section>
+        <div class="container-sm">
+            <div class="row">
+                <div class="row-sm-12 medio">
+                    <img class="comedor" src="./Assets/comedor2.jpg" alt="">
+                        <div class="row-sm-12 d-flex flex-column justify-content-center">
+                            <h2>¡Muebles a Medida para tus proyectos personales!<p>¡Hacemos Aberturas, Vestidores, Amoblamientos de Cocina, Sillas , Mesas, de todo para tu Hogar!</p></h2>
+                        </div>
                 </div>
             </div>
         </div>
+    </section>
                 <!--Pie de pagina-->   
         <footer class="footer">
             <div>
