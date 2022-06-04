@@ -6,6 +6,15 @@
 
 /*INDEX*/
 
+
+.footer{
+    background-color: #F6EFE7;
+    grid-area: footer;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
 .nav{
     background-color: #F6EFE7;
     font-size: 1.3rem;
@@ -60,7 +69,14 @@ transform: rotate(45deg) translateY(-550px) translateX(-60px);
 .medio:after{
     transform: rotate(-45deg) translateY(250px) translateX(-0px);
     }
-    
+
+.medio:hover:before{
+        transform: rotate(-45deg) translateY(250px) translateX(-0px);
+        }
+
+.medio:hover:before{
+            transform: rotate(-45deg) translateY(250px) translateX(-0px);
+            }
 
 
 .textoimg {
@@ -73,19 +89,19 @@ transform: rotate(45deg) translateY(-550px) translateX(-60px);
     font-family: 'Bebas Neue', cursive;
     font-size: 1.4rem;
     text-shadow: 1.5px 1.5px 3px rgb(0, 0, 0);
-    
+
 }
 
-    
+
 @media screen and (max-width: 770px) {
-	
+
 }
 
 
 
 @media screen and (max-width: 430px) {
-	
-    .comedor{
+
+    .section{
         background-image: url(./Assets/movile.jpg);
     }
 
@@ -111,7 +127,7 @@ transform: rotate(45deg) translateY(-550px) translateX(-60px);
       opacity: 1;
     }
   }
-  
+
 
 /*PRODUCTOS*/
 
@@ -135,7 +151,7 @@ a{
     color: #242323;
 }
 .container-fluids{
-    overflow:hidden; 
+    overflow:hidden;
     background:#262626 ;
     color: #627482  !important;
     margin-bottom: 0;
@@ -144,7 +160,7 @@ a{
 }
 
 small{
-    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
 }
 
 .bold-text{
@@ -153,18 +169,18 @@ small{
 
 
 .mt-55{
-    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; 
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important;
 }
 
 
 h3{
-    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important; 
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important;
 }
 
 .social{
-    font-size: 21px !important; 
+    font-size: 21px !important;
 }
 
 .rights{
-    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important;
 }
