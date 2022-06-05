@@ -6,20 +6,10 @@
 
 /*INDEX*/
 
-
-.footer{
-    background-color: #F6EFE7;
-    grid-area: footer;
-    padding-top: 20px;
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
-}
-
 .nav{
     background-color: #F6EFE7;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'Bebas Neue', cursive;
-    text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
 
 }
 
@@ -30,52 +20,68 @@ li{
     list-style: none;
 }
 
+#button{
+    background-color:black;
+    z-index: 1;
+}
+
 .logo{
     height: 60px;
     margin-left: 2.5rem;
 }
+
 
 .medio{
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 .medio h2{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     font-size: 1.4rem;
+    z-index: 2;
+    transition: all 300ms;
+    padding: 6px;
 }
 
 .medio img{
     height: 100%;
     width: 100%;
 }
-.medio:after,
-.medio:before{
+
+.medio:hover h2{
+    transform: translate(-50%, -50%) scale(1);
+}
+.medio:before,
+.medio:after{
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 180%;
+    height: 180%;
     position: absolute;
     background-color: #242323;
     opacity: 0.6;
+    transition: 300ms;
+    
 }
 
 .medio:before{
-transform: rotate(45deg) translateY(-550px) translateX(-60px);
+transform: rotate(45deg) translateY(-1140px) translateX(0px);
 }
 .medio:after{
-    transform: rotate(-45deg) translateY(250px) translateX(-0px);
+    transform: rotate(45deg) translateY(1140px) translateX(0px);
     }
 
 .medio:hover:before{
-        transform: rotate(-45deg) translateY(250px) translateX(-0px);
+        transform: rotate(45deg) translateY(-300px) translateX(-100px);
         }
 
-.medio:hover:before{
-            transform: rotate(-45deg) translateY(250px) translateX(-0px);
+.medio:hover:after{
+            transform: rotate(45deg) translateY(300px) translateX(-100px);
             }
 
 
@@ -92,17 +98,33 @@ transform: rotate(45deg) translateY(-550px) translateX(-60px);
 
 }
 
+/*MEDIA QUERIES*/
 
 @media screen and (max-width: 770px) {
 
+    .comedor{
+        height: 100%;
+        width: 100%;
+    }
+    .container-fluids{
+        margin-top: 0px;
+    }
+    
 }
 
 
 
 @media screen and (max-width: 430px) {
 
+    .container-fluids{
+        margin-top: 0px;
+    }
     .section{
         background-image: url(./Assets/movile.jpg);
+    }
+    .comedor{
+        height: 100%;
+        width: 100%;
     }
 
 }
@@ -136,6 +158,17 @@ transform: rotate(45deg) translateY(-550px) translateX(-60px);
 
 /*CONTACTOS*/
 
+.button {
+    color: #fff;
+    background-color: #262626;
+    border-color: #262626;
+}
+.navbar-toggler-icon {
+    color: #fff;
+    background-color: #262626;
+    border-color: #262626;
+}
+
 /*FOOTER*/
 
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
@@ -156,7 +189,7 @@ a{
     color: #627482  !important;
     margin-bottom: 0;
     padding-bottom:0;
-    margin-top: 250px;
+    margin-top: 0px;
 }
 
 small{
