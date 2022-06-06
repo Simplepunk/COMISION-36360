@@ -6,6 +6,15 @@
 
 /*INDEX*/
 
+
+.footer{
+    background-color: #F6EFE7;
+    grid-area: footer;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
 .nav{
     background-color: #F6EFE7;
     font-size: 1.5rem;
@@ -66,7 +75,7 @@ li{
     background-color: #242323;
     opacity: 0.6;
     transition: 300ms;
-    
+
 }
 
 .medio:before{
@@ -98,18 +107,9 @@ transform: rotate(45deg) translateY(-1140px) translateX(0px);
 
 }
 
-/*MEDIA QUERIES*/
 
 @media screen and (max-width: 770px) {
 
-    .comedor{
-        height: 100%;
-        width: 100%;
-    }
-    .container-fluids{
-        margin-top: 0px;
-    }
-    
 }
 
 
