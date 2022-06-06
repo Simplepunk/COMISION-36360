@@ -135,20 +135,20 @@ transform: rotate(45deg) translateY(-1140px) translateX(0px);
 	animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
- @keyframes tracking-in-expand-fwd {
+@keyframes tracking-in-expand-fwd {
     0% {
-      letter-spacing: -0.5em;
-      transform: translateZ(-700px);
-      opacity: 0;
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
     }
     40% {
-      opacity: 0.6;
+    opacity: 0.6;
     }
     100% {
-      transform: translateZ(0);
-      opacity: 1;
+    transform: translateZ(0);
+    opacity: 1;
     }
-  }
+}
 
 
 /*PRODUCTOS*/
@@ -156,13 +156,40 @@ transform: rotate(45deg) translateY(-1140px) translateX(0px);
 
 
 
-/*CONTACTOS*/
+/*CONTACTO*/
 
-.button {
-    color: #fff;
-    background-color: #262626;
-    border-color: #262626;
+body {
+    font-family: 'Lato', sans-serif;
 }
+
+h1 {
+    margin-bottom: 40px;
+}
+
+label {
+    color: #333;
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 25px;
+    margin-top: 20px;
+    }
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+
+}
+
+.card{
+    padding: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 
 /*FOOTER*/
 
