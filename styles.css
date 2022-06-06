@@ -163,11 +163,6 @@ transform: rotate(45deg) translateY(-1140px) translateX(0px);
     background-color: #262626;
     border-color: #262626;
 }
-.navbar-toggler-icon {
-    color: #fff;
-    background-color: #262626;
-    border-color: #262626;
-}
 
 /*FOOTER*/
 
@@ -181,7 +176,7 @@ body {
 
 a{
     text-decoration: none;
-    color: #242323;
+    color: #161616;
 }
 .container-fluids{
     overflow:hidden;
