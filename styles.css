@@ -75,7 +75,7 @@ li{
     background-color: #242323;
     opacity: 0.6;
     transition: 300ms;
-
+    
 }
 
 .medio:before{
@@ -153,6 +153,9 @@ transform: rotate(45deg) translateY(-1140px) translateX(0px);
 
 /*PRODUCTOS*/
 
+.card-group{
+    text-align: center;
+}
 
 
 
