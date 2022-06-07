@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="../Assets/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     <title>Productos</title>
 </head>
@@ -19,85 +17,94 @@
     <header>
         <nav class="navbar nav navbar-expand-lg">
             <div class="container-fluid">
-                <a href="/index.html"><img class="logo" src="../Assets/carpinteria.png" alt=""></a>
+                <a href="../index.html"><img class="logo" src="../Assets/carpinteria.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./Productos.html">Productos</a>
+                        <a class="nav-link expand" aria-current="page" href="./Productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./Nuestras_Tiendas.html">Nuestras tiendas</a>
+                        <a class="nav-link expand" href="./Nuestras_Tiendas.html">Nuestras tiendas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./Quienes_somos.html">¿Quienes somos?</a>
+                        <a class="nav-link expand" href="./Quienes_somos.html">¿Quienes somos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        <a class="nav-link expand" href="./Contacto.html">Contacto</a>
                     </li>
                     </ul>
                 </div>
             </div>
         </nav> 
-    </header>               
-                        <!-- Descripcion y precios -->
-                <section class="section_productos">
-                        <h2 class="titulo__productos">¡Algunos de nuestros productos!</h2>
-                <div class="productos__section">                    
-                                <!-- imagenes de las sillas -->
-                            <div class="productos__puertas">                    
-                                    <h3 class="titulo__puerta">Puerta en Roble de 2.10mts x 1mts</h3> 
-                                <div class="puertas__section">
-                                    <img class="imagenpuertas" src="../Assets/puerta1.jpg" alt="">
-                                    <p class="precio">Precio: $367.000</p>
-                                </div>
-                            </div>                
-                            <div class="productos__puertas">                 
-                                    <h3 class="titulo__puerta">Puerta en Kiri de 2mts x 0.90mts</h3> 
-                                    <div class="puertas__section">
-                                        <img class="imagenpuertas" src="../Assets/puerta2.jpg" alt="">
-                                        <p class="precio"> Precio: $350.000</p>
-                                    </div>
-                            </div>            
-                            <div class="productos__puertas">  
-                                <h3 class="titulo__puerta">Puerta en Kiri de 2mts x 1mts</h3> 
-                                <div class="puertas__section">
-                                    <img class="imagenpuertas" src="../Assets/puerta3.jpg" alt="">
-                                    <P class="precio">Precio: $428.000</P>
-                                </div>
-                            </div>
+</header>               
+                <!-- Descripcion y precios -->
+<section>
+    <div class="container_products p-4 mt-5 mb-5">
+        <div class="row card-group">
+            <div class="col-md-4">
+            <div class="card bg-light p-0">
+                <img src="../Assets/puerta1.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Puerta de Cedro</h5>
+                    <p class="card-text">Cedro macizo de 2 pulgadas, incluye herrajes, laca poliuretanica, colocación y flete!</p>
+                    <p class="card-text"><small class="text-muted">Precio $420.000</small></p>
                 </div>
-                </section> 
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-light p-0">
+                <img src="../Assets/puerta2.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Puerta de Kiri</h5>
+                    <p class="card-text">Kiri macizo de 2 pulgadas, incluye herrajes, laca poliuretanica, colocación y flete!</p>
+                    <p class="card-text"><small class="text-muted">Precio $440.000</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-light p-0">
+                <img src="../Assets/puerta3.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Puerta de Oro Blanco</h5>
+                    <p class="card-text">Oro Blanco macizo de 2 pulgadas, incluye herrajes, laca poliuretanica, colocación y flete!</p>
+                    <p class="card-text"><small class="text-muted">Precio $380.000</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>    
+</section> 
                 <!--Pie de pagina-->   
-                footer>
-                <div class="container-fluids pb-0 mb-0 justify-content-center text-light ">
-                    <div class="row my-5 justify-content-center py-5">
-                            <div class="col-11">
-                                <div class="row ">
-                                    <div class="col-xl-8 col-md-4 col-sm-4 col-12   my-auto mx-auto a"><h3 class="text-muted mb-md-0 mb-5 bold-text">Monzón Carpinteria</h3></div>
-                                    <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 bold-text ">
-                                        <b>MENU</b></h6><ul class="list-unstyled">
-                                            <a href="Productos.html"><li> Productos</li></a>
-                                            <a href="Nuestras_Tiendas.html"><li>Nuestras Tiendas</li></a>
-                                            <a href="Quienes_somos.html"><li>Quienes somos?</li></a>
-                                            <a href="Contacto.html"><li>Contacto</li></a></ul>
-                                    </div>
-                                    <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5">
-                                        <b>Dirección</b></h6><p class="mb-1">Cordillera 2460</p><p>B° Cerro de las Rosas</p> 
-                                    </div>
-                                </div>
-                                <div class="row ">
-                                    <div class="col-xl-8 col-md-4 col-sm-4 col-auto  my-md-0 mt-5 order-sm-1 order-3 align-self-end"><p class="social text-muted mb-0 pb-0 bold-text"> <span  class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> Carpinteria Monzon todos los derechos reservados.</small></div>
-                                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end "><h6 class="mt-55 mt-2 text-muted bold-text"><b>E-mail:</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> CarpinteriaMonzon@gmail.com</small></div>
-                                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3   "><h6 class="text-muted bold-text"><b>Telefono:</b></h6><small><span><i class="" aria-hidden="true"></i></span>0351 - 15326598 </small></div>
-                                </div>
+<footer>
+        <div class="container-fluids pb-0 mb-0 justify-content-center text-light ">
+            <div class="row my-5 justify-content-center py-5">
+                <div class="col-11">
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-12   my-auto mx-auto a"><h3 class="mb-md-0 mb-5 bold-text">Monzón Carpinteria</h3></div>
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 bold-text ">
+                                <b>MENU</b></h6><ul class="list-unstyled">
+                                <a href="Productos.html"><li> Productos</li></a>
+                                <a href="Nuestras_Tiendas.html"><li>Nuestras Tiendas</li></a>
+                                <a href="Quienes_somos.html"><li>Quienes somos?</li></a>
+                                <a href="Contacto.html"><li>Contacto</li></a></ul>
+                            </div>
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 bold-text mt-sm-0 mt-5">
+                                <b>Dirección</b></h6><p class="mb-1">Cordillera 2460</p><p>B° Cerro de las Rosas</p> 
                             </div>
                     </div>
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto  my-md-0 mt-5 order-sm-1 order-3 align-self-end"><p class="social mb-0 pb-0 bold-text"> <span  class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> Carpinteria Monzon todos los derechos reservados.</small></div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end "><h6 class="mt-55 mt-2 bold-text"><b>E-mail:</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> CarpinteriaMonzon@gmail.com</small></div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3   "><h6 class=" bold-text"><b>Telefono:</b></h6><small><span><i class="" aria-hidden="true"></i></span>0351 - 15326598 </small></div>
+                    </div>
                 </div>
-            </footer>
+            </div>
+        </div>
+</footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        
 </body>
 </html>

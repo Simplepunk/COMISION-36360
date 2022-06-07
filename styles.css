@@ -17,9 +17,8 @@
 
 .nav{
     background-color: #F6EFE7;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'Bebas Neue', cursive;
-    text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
 
 }
 
@@ -30,46 +29,69 @@ li{
     list-style: none;
 }
 
+#button{
+    background-color:black;
+    z-index: 1;
+}
+
 .logo{
     height: 60px;
     margin-left: 2.5rem;
 }
+
 
 .medio{
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 .medio h2{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     font-size: 1.4rem;
+    z-index: 2;
+    transition: all 300ms;
+    padding: 6px;
 }
 
-.medio img{
+.medioimg{
     height: 100%;
     width: 100%;
 }
-.medio:after,
-.medio:before{
+
+.medio:hover h2{
+    transform: translate(-50%, -50%) scale(1);
+}
+.medio:before,
+.medio:after{
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 180%;
+    height: 180%;
     position: absolute;
     background-color: #242323;
     opacity: 0.6;
+    transition: 300ms;
+    
 }
 
 .medio:before{
-transform: rotate(45deg) translateY(-550px) translateX(-60px);
+transform: rotate(45deg) translateY(-1140px) translateX(0px);
 }
 .medio:after{
-    transform: rotate(-45deg) translateY(250px) translateX(-0px);
+    transform: rotate(45deg) translateY(1140px) translateX(0px);
     }
 
+.medio:hover:before{
+        transform: rotate(45deg) translateY(-300px) translateX(-100px);
+        }
+
+.medio:hover:after{
+            transform: rotate(45deg) translateY(300px) translateX(-100px);
+            }
 
 
 .textoimg {
@@ -94,8 +116,15 @@ transform: rotate(45deg) translateY(-550px) translateX(-60px);
 
 @media screen and (max-width: 430px) {
 
+    .container-fluids{
+        margin-top: 0px;
+    }
     .section{
         background-image: url(./Assets/movile.jpg);
+    }
+    .comedor{
+        height: 100%;
+        width: 100%;
     }
 
 }
@@ -106,32 +135,71 @@ transform: rotate(45deg) translateY(-550px) translateX(-60px);
 	animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
- @keyframes tracking-in-expand-fwd {
+@keyframes tracking-in-expand-fwd {
     0% {
-      letter-spacing: -0.5em;
-      transform: translateZ(-700px);
-      opacity: 0;
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
     }
     40% {
-      opacity: 0.6;
+    opacity: 0.6;
     }
     100% {
-      transform: translateZ(0);
-      opacity: 1;
+    transform: translateZ(0);
+    opacity: 1;
     }
-  }
+}
 
+/*QUIENES SOMOS*/
 
 /*PRODUCTOS*/
 
+.card-group{
+    text-align: center;
+}
 
 
 
-/*CONTACTOS*/
+/*CONTACTO*/
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+label {
+    color: #333;
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 25px;
+    margin-top: 20px;
+    }
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+
+}
+
+.card{
+    padding: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 
 /*FOOTER*/
 
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
 body {
     background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
     font-family: 'Rubik', sans-serif;
@@ -141,7 +209,7 @@ body {
 
 a{
     text-decoration: none;
-    color: #242323;
+    color: #161616;
 }
 .container-fluids{
     overflow:hidden;
@@ -149,7 +217,7 @@ a{
     color: #627482  !important;
     margin-bottom: 0;
     padding-bottom:0;
-    margin-top: 250px;
+    margin-top: 0px;
 }
 
 small{
