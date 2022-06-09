@@ -262,14 +262,15 @@ label {
         display: block !important; 
     }
     
-    .textoimg{
-    color: rgb(255, 245, 245);
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.4rem;
-    text-shadow: 1.5px 1.5px 3px rgb(0, 0, 0);
-    }
     .medio h2{
-        display: block;
+        display: block !important;
+        transition: none;
+        transform: none;
+        animation: none;      
+        color: rgb(255, 245, 245);
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.4rem;
+        text-shadow: 1.5px 1.5px 3px rgb(0, 0, 0);
     }
 
     .video{
