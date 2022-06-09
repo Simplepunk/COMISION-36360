@@ -82,7 +82,7 @@ transform: rotate(45deg) translateY(-1140px) translateX(0px);
         }
 
 .medio:hover:after{
-            transform: rotate(45deg) translateY(300px) translateX(-100px);
+            transform: rotate(45deg) translateY(100px) translateX(-100px);
             }
 
 
@@ -104,11 +104,43 @@ transform: rotate(45deg) translateY(-1140px) translateX(0px);
     color: rgb(0, 0, 0);
     font-family: 'Bebas Neue', cursive;
     font-size: 1.4rem;
-    text-shadow: 1.5px 1.5px 3px rgb(0, 0, 0);
+    text-shadow: 1px 1px 1.5px rgb(0, 0, 0);
 }
 
 
 /*ANIMACIONES*/
+
+.textprod {
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-contract {
+    0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    }
+}
+@keyframes focus-in-contract {
+    0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    }
+}
 
 .expand {
 	animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
